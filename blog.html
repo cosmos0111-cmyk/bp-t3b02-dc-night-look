@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>등촌 유흥 룩북 블로그 | 전문가 인사이트 · 데이터 기반 가이드</title>
+    <meta name="description" content="등촌 유흥 룩북 블로그 – 업계 전문가가 분석한 실제 리뷰 200+건 기반 나이트라이프 인사이트. 2025년 최신 트렌드와 독점 정보를 확인하세요. 문의 010-6279-0862">
+    <meta name="keywords" content="등촌 유흥 룩북, 등촌 나이트라이프, 등촌 유흥 정보, 등촌 밤문화, 유흥 블로그, 등촌 리뷰, 등촌 업소 추천">
+    <link rel="canonical" href="https://t3b02-dc-night-look.pages.dev/blog/">
+    <meta property="og:title" content="등촌 유흥 룩북 블로그 | 전문가 인사이트">
+    <meta property="og:description" content="등촌 유흥 룩북 블로그 – 업계 전문가가 분석한 실제 리뷰 200+건 기반 나이트라이프 인사이트. 2025년 최신 트렌드와 독점 정보를 확인하세요.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://t3b02-dc-night-look.pages.dev/blog/">
+    <meta property="og:site_name" content="등촌 유흥 룩북">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        /* ===== GLOBAL ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0f;
+            color: #e0e0e0;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        a {
+            color: #ff2d55;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: #ff6b8a;
+        }
+        img, svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* ===== TYPOGRAPHY ===== */
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #ff2d55, #ff6b8a, #ff8fab);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            border-left: 4px solid #ff2d55;
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #ffffff;
+        }
+        p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+            color: #c0c0c8;
+        }
+        .accent-text {
+            color: #ff2d55;
+            font-weight: 600;
+        }
+        /* ===== HEADER / NAV ===== */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 10, 15, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 45, 85, 0.2);
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .logo:hover {
+            color: #ff2d55;
+        }
+        .logo span {
+            background: #ff2d55;
+            color: #fff;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 700;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #b0b0b8;
+            letter-spacing: 0.02em;
+            padding: 0.4rem 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ff2d55;
+            border-bottom-color: #ff2d55;
+        }
+        .nav-links a.active {
+            font-weight: 700;
+        }
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.8rem;
+            cursor: pointer;
+            padding: 0.25rem;
+        }
+        /* ===== BLOG POST ===== */
+        .blog-post {
+            padding: 4rem 0 5rem;
+        }
+        .post-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        .post-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .post-body {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .post-body .highlight-box {
+            background: rgba(255, 45, 85, 0.08);
+            border-left: 4px solid #ff2d55;
+            padding: 1.5rem 2rem;
+            border-radius: 0 8px 8px 0;
+            margin: 2rem 0;
+        }
+        .post-body .highlight-box p {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            color: #e0e0e8;
+        }
+        .post-body .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+        .post-body .data-table th {
+            background: rgba(255, 45, 85, 0.15);
+            color: #ff2d55;
+            text-align: left;
+            padding: 0.8rem 1rem;
+            border-bottom: 2px solid #ff2d55;
+        }
+        .post-body .data-table td {
+            padding: 0.8rem 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            color: #c0c0c8;
+        }
+        .post-body .data-table tr:hover td {
+            background: rgba(255, 45, 85, 0.04);
+        }
+        .post-body blockquote {
+            border-left: 4px solid #ff2d55;
+            padding: 1rem 1.5rem;
+            margin: 2rem 0;
+            background: rgba(255, 45, 85, 0.04);
+            font-style: italic;
+            color: #d0d0d8;
+        }
+        .post-body .cta-section {
+            background: linear-gradient(135deg, rgba(255, 45, 85, 0.1), rgba(255, 107, 138, 0.05));
+            border: 1px solid rgba(255, 45, 85, 0.25);
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .post-body .cta-section h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+        .post-body .cta-section .phone-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #ff2d55;
+            letter-spacing: 0.05em;
+            display: block;
+            margin: 0.5rem 0;
+        }
+        .post-body .cta-section p {
+            color: #b0b0b8;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+        /* ===== FAQ (블로그 내 포함) ===== */
+        .faq-list {
+            margin: 2.5rem 0;
+        }
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 1.2rem 0;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #ffffff;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            color: #ff2d55;
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+        .faq-answer {
+            margin-top: 0.6rem;
+            color: #b0b0b8;
+            font-size: 0.98rem;
+            line-height: 1.6;
+            display: none;
+        }
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+        .faq-item.open .faq-question::after {
+            content: '−';
+        }
+        /* ===== FOOTER ===== */
+        footer {
+            border-top: 1px solid rgba(255, 45, 85, 0.15);
+            padding: 2.5rem 0;
+            text-align: center;
+            color: #666;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: #888;
+        }
+        footer a:hover {
+            color: #ff2d55;
+        }
+        /* ===== RESPONSIVE 768 ===== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: rgba(10, 10, 15, 0.98);
+                backdrop-filter: blur(12px);
+                padding: 1.5rem 2rem;
+                gap: 1.2rem;
+                border-bottom: 1px solid rgba(255, 45, 85, 0.2);
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+            .post-body .data-table {
+                font-size: 0.8rem;
+            }
+            .post-body .cta-section {
+                padding: 2rem 1rem;
+            }
+            .post-body .cta-section .phone-number {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                등촌 룩북
+                <span>VIP</span>
+            </a>
+            <button class="hamburger" aria-label="메뉴 열기" onclick="this.parentElement.nextElementSibling.classList.toggle('open')">☰</button>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/lookbook/">룩북</a></li>
+                <li><a href="/blog/" class="active">블로그</a></li>
+                <li><a href="/contact/">문의</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-post">
+            <div class="container post-body">
+                <h1>등촌 유흥 룩북<br>2025년 업계 전문가의 데이터 기반 가이드</h1>
+                <div class="post-meta">
+                    <span>📅 2025년 3월 28일</span>
+                    <span>✍️ 등촌 유흥 룩북 편집팀</span>
+                    <span>📊 분석 기반 200+ 건 리뷰</span>
+                </div>
+
+                <p>등
+</body>
+</html>
