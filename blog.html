@@ -1,360 +1,89 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <title>등촌 유흥 룩북 블로그 | 전문가 인사이트 · 데이터 기반 가이드</title>
-    <meta name="description" content="등촌 유흥 룩북 블로그 – 업계 전문가가 분석한 실제 리뷰 200+건 기반 나이트라이프 인사이트. 2025년 최신 트렌드와 독점 정보를 확인하세요. 문의 010-6279-0862">
-    <meta name="keywords" content="등촌 유흥 룩북, 등촌 나이트라이프, 등촌 유흥 정보, 등촌 밤문화, 유흥 블로그, 등촌 리뷰, 등촌 업소 추천">
-    <link rel="canonical" href="https://deungchon-night-tip.hardcoreroom.com/blog.html">
-    <meta property="og:title" content="등촌 유흥 룩북 블로그 | 전문가 인사이트">
-    <meta property="og:description" content="등촌 유흥 룩북 블로그 – 업계 전문가가 분석한 실제 리뷰 200+건 기반 나이트라이프 인사이트. 2025년 최신 트렌드와 독점 정보를 확인하세요.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://deungchon-night-tip.hardcoreroom.com/blog.html">
-    <meta property="og:site_name" content="등촌 유흥 룩북">
-    <meta name="twitter:card" content="summary_large_image">
-    <style>
-        /* ===== GLOBAL ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #0a0a0f;
-            color: #e0e0e0;
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-        }
-        a {
-            color: #ff2d55;
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-        a:hover {
-            color: #ff6b8a;
-        }
-        img, svg {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        /* ===== TYPOGRAPHY ===== */
-        h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, #ff2d55, #ff6b8a, #ff8fab);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 1rem;
-            border-left: 4px solid #ff2d55;
-            padding-left: 1rem;
-        }
-        h3 {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-            color: #ffffff;
-        }
-        p {
-            margin-bottom: 1.25rem;
-            font-size: 1.05rem;
-            color: #c0c0c8;
-        }
-        .accent-text {
-            color: #ff2d55;
-            font-weight: 600;
-        }
-        /* ===== HEADER / NAV ===== */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: rgba(10, 10, 15, 0.92);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255, 45, 85, 0.2);
-        }
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 70px;
-        }
-        .logo {
-            font-size: 1.6rem;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
-        }
-        .logo:hover {
-            color: #ff2d55;
-        }
-        .logo span {
-            background: #ff2d55;
-            color: #fff;
-            font-size: 0.7rem;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-weight: 700;
-        }
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-            align-items: center;
-        }
-        .nav-links a {
-            font-size: 0.95rem;
-            font-weight: 500;
-            color: #b0b0b8;
-            letter-spacing: 0.02em;
-            padding: 0.4rem 0;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s;
-        }
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: #ff2d55;
-            border-bottom-color: #ff2d55;
-        }
-        .nav-links a.active {
-            font-weight: 700;
-        }
-        .hamburger {
-            display: none;
-            background: none;
-            border: none;
-            color: #fff;
-            font-size: 1.8rem;
-            cursor: pointer;
-            padding: 0.25rem;
-        }
-        /* ===== BLOG POST ===== */
-        .blog-post {
-            padding: 4rem 0 5rem;
-        }
-        .post-meta {
-            display: flex;
-            gap: 1.5rem;
-            color: #888;
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
-        }
-        .post-meta span {
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
-        }
-        .post-body {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .post-body .highlight-box {
-            background: rgba(255, 45, 85, 0.08);
-            border-left: 4px solid #ff2d55;
-            padding: 1.5rem 2rem;
-            border-radius: 0 8px 8px 0;
-            margin: 2rem 0;
-        }
-        .post-body .highlight-box p {
-            margin-bottom: 0;
-            font-size: 1.1rem;
-            color: #e0e0e8;
-        }
-        .post-body .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            font-size: 0.95rem;
-        }
-        .post-body .data-table th {
-            background: rgba(255, 45, 85, 0.15);
-            color: #ff2d55;
-            text-align: left;
-            padding: 0.8rem 1rem;
-            border-bottom: 2px solid #ff2d55;
-        }
-        .post-body .data-table td {
-            padding: 0.8rem 1rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-            color: #c0c0c8;
-        }
-        .post-body .data-table tr:hover td {
-            background: rgba(255, 45, 85, 0.04);
-        }
-        .post-body blockquote {
-            border-left: 4px solid #ff2d55;
-            padding: 1rem 1.5rem;
-            margin: 2rem 0;
-            background: rgba(255, 45, 85, 0.04);
-            font-style: italic;
-            color: #d0d0d8;
-        }
-        .post-body .cta-section {
-            background: linear-gradient(135deg, rgba(255, 45, 85, 0.1), rgba(255, 107, 138, 0.05));
-            border: 1px solid rgba(255, 45, 85, 0.25);
-            border-radius: 12px;
-            padding: 2.5rem 2rem;
-            text-align: center;
-            margin: 3rem 0;
-        }
-        .post-body .cta-section h3 {
-            font-size: 1.6rem;
-            margin-bottom: 0.5rem;
-        }
-        .post-body .cta-section .phone-number {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: #ff2d55;
-            letter-spacing: 0.05em;
-            display: block;
-            margin: 0.5rem 0;
-        }
-        .post-body .cta-section p {
-            color: #b0b0b8;
-            font-size: 1rem;
-            margin-bottom: 0;
-        }
-        /* ===== FAQ (블로그 내 포함) ===== */
-        .faq-list {
-            margin: 2.5rem 0;
-        }
-        .faq-item {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-            padding: 1.2rem 0;
-        }
-        .faq-question {
-            font-weight: 600;
-            color: #ffffff;
-            font-size: 1.1rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .faq-question::after {
-            content: '+';
-            color: #ff2d55;
-            font-size: 1.4rem;
-            font-weight: 300;
-        }
-        .faq-answer {
-            margin-top: 0.6rem;
-            color: #b0b0b8;
-            font-size: 0.98rem;
-            line-height: 1.6;
-            display: none;
-        }
-        .faq-item.open .faq-answer {
-            display: block;
-        }
-        .faq-item.open .faq-question::after {
-            content: '−';
-        }
-        /* ===== FOOTER ===== */
-        footer {
-            border-top: 1px solid rgba(255, 45, 85, 0.15);
-            padding: 2.5rem 0;
-            text-align: center;
-            color: #666;
-            font-size: 0.85rem;
-        }
-        footer a {
-            color: #888;
-        }
-        footer a:hover {
-            color: #ff2d55;
-        }
-        /* ===== RESPONSIVE 768 ===== */
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 16px;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                background: rgba(10, 10, 15, 0.98);
-                backdrop-filter: blur(12px);
-                padding: 1.5rem 2rem;
-                gap: 1.2rem;
-                border-bottom: 1px solid rgba(255, 45, 85, 0.2);
-            }
-            .nav-links.open {
-                display: flex;
-            }
-            .hamburger {
-                display: block;
-            }
-            .post-body .data-table {
-                font-size: 0.8rem;
-            }
-            .post-body .cta-section {
-                padding: 2rem 1rem;
-            }
-            .post-body .cta-section .phone-number {
-                font-size: 1.4rem;
-            }
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta charset="UTF-8">
+<title>블로그 - 등촌 유흥 룩북</title>
+<meta name="description" content="등촌 유흥 시설을 방문하기 전 반드시 확인해야 할 항목을 상황별로 정리했습니다. 인원, 시간, 목적에 따라 필요한 체크리스트와 판단 기준을 빠르게 확인하세요.">
+<meta name="keywords" content="등촌, 유흥, 룩북, 방문 체크리스트, 밤문화, 조건별 추천">
+<link rel="canonical" href="https://deungchon-night-tip.hardcoreroom.com/blog.html">
+<meta property="og:title" content="등촌 유흥 룩북 — 방문 전 체크리스트와 상황별 추천">
+<meta property="og:description" content="등촌 유흥 시설을 방문하기 전 반드시 확인해야 할 항목을 상황별로 정리했습니다.">
+<meta property="og:url" content="https://deungchon-night-tip.hardcoreroom.com/blog.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://deungchon-night-tip.hardcoreroom.com/assets/og-imag">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container header-inner">
-            <a href="/" class="logo">
-                등촌 룩북
-                <span>VIP</span>
-            </a>
-            <button class="hamburger" aria-label="메뉴 열기" onclick="this.parentElement.nextElementSibling.classList.toggle('open')">☰</button>
-            <ul class="nav-links">
-                <li><a href="/">홈</a></li>
-                <li><a href="/lookbook/">룩북</a></li>
-                <li><a href="/blog/" class="active">블로그</a></li>
-                <li><a href="/contact/">문의</a></li>
-            </ul>
-        </div>
-    </header>
+<div class="container">
+<header>
+<div class="nav-toggle">☰</div>
+<nav>
+<ul>
+<li><a href="/">홈</a></li>
+<li><a href="/lookbook">룩북</a></li>
+<li><a href="/blog">블로그</a></li>
+<li><a href="/contact">연락처</a></li>
+</ul>
+</nav>
+</header>
 
-    <main>
-        <section class="blog-post">
-            <div class="container post-body">
-                <h1>등촌 유흥 룩북<br>2025년 업계 전문가의 데이터 기반 가이드</h1>
-                <div class="post-meta">
-                    <span>📅 2025년 3월 28일</span>
-                    <span>✍️ 등촌 유흥 룩북 편집팀</span>
-                    <span>📊 분석 기반 200+ 건 리뷰</span>
-                </div>
+<div class="hero">
+<h1>등촌 유흥 룩북 – 블로그</h1>
+<p>친구와 함께하거나, 혼자 새로운 분위기를 찾고 있든, 등촌 밤문화를 더 똑똑하게 즐길 수 있는 팁을 공유합니다.</p>
+</div>
 
-                <p>등
+<section class="section">
+<h2>시작 전 체크리스트</h2>
+<p>첫 번째 단계는 기본적인 준비입니다. 방문 전 날씨와 교통 상황을 확인하고, 가능한 대중교통 옵션을 미리 조사해 두세요. 특히 주말엔 택시 대기 시간이 길어질 수 있으니, 미리 예약하거나 공유 서비스를 활용하는 것이 좋습니다.</p>
+<p>다음으로는 개인 안전을 위한 준비입니다. 신분증은 항상 휴대하고, 과도한 음주를 피하기 위해 물을 충분히 챙기세요. 친구와 함께라면 서로의 위치를 실시간 공유하는 앱을 활용하면 안심할 수 있습니다.</p>
+</section>
+
+<section class="section">
+<h2>인원별 팁</h2>
+<p>두 명이서 방문한다면, 분위기 좋은 라운지와 프라이빗 룸을 미리 예약하는 것이 핵심입니다. 사전 예약을 하면 좌석을 확보할 수 있을 뿐 아니라, 가벼운 스낵과 드링크 메뉴를 미리 확인해 둘 수 있습니다.</p>
+<p>세 명 이상인 경우에는 파티 분위기를 즐기기 좋은 대형 테이블을 찾아보세요. 대규모 인원에게는 사전 주문이 가능한 코스 메뉴가 효율적이며, 결제 시 현금보다는 카드 결제가 더 편리합니다.</p>
+</section>
+
+<section class="section">
+<h2>시간대별 추천</h2>
+<p>오후 6시부터 8시 사이에 도착하면 비교적 한산한 분위기에서 장소를 탐색할 수 있습니다. 이때는 바쁜 시간대가 되기 전이므로, 바 테이블을 미리 확보하고 원하는 음료를 주문해 두는 것이 좋습니다.</p>
+<p>밤 10시 이후에는 에너지 넘치는 음악과 분위기가 활기차집니다. 클럽형 바에서는 DJ가 플레이하는 트랙을 미리 체크하고, 입장료와 드레스 코드를 확인하세요. 늦은 시간엔 안전 귀가를 위한 교통편 예약도 놓치지 마세요.</p>
+</section>
+
+<section class="section">
+<h2>목적별 준비물</h2>
+<p>친목 도모가 목적이라면 사진 촬영을 위한 조명 좋은 스팟을 찾아보세요. 인스타그램에 올릴 사진을 미리 구성하면 더욱 기억에 남는 밤이 됩니다. 또한, 그룹 채팅을 통해 사진 공유를 간편하게 할 수 있습니다.</p>
+<p>비즈니스 네트워킹이 목표라면, 명함 교환이 가능한 라운지 공간을 예약하고, 조용한 대화를 위한 좌석을 미리 확보하세요. 와인이나 고급 칵테일 메뉴를 미리 알아보고, 예산을 정해두면 대화에 집중할 수 있습니다.</p>
+</section>
+
+<section class="section">
+<h2>추천 장소 리스트</h2>
+<table class="table">
+<thead>
+<tr><th>이름</th><th>특징</th><th>가격대</th></tr>
+</thead>
+<tbody>
+<tr><td>루프탑 바 A</td><td>야경과 라이브 음악</td><td>₩30,000~</td></tr>
+<tr><td>프라이빗 라운지 B</td><td>조용한 분위기, 예약 필수</td><td>₩25,000~</td></tr>
+<tr><td>클럽 C</td><td>전광판과 DJ 파티</td><td>₩40,000~</td></tr>
+<tr><td>캐주얼 펍 D</td><td>다양한 안주와 맥주</td><td>₩15,000~</td></tr>
+</tbody>
+</table>
+<p>위 표는 등촌 지역에서 가장 인기 있는 네 곳을 선정한 것이며, 각 장소마다 분위기와 가격대가 다릅니다. 방문 전 웹사이트나 SNS를 통해 최신 이벤트 정보를 확인하는 것을 권장합니다.</p>
+</section>
+
+<section class="section">
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+<p><strong>Q: 등촌에서 대중교통으로 이동하기 편한가요?</strong><br>A: 지하철 5호선과 버스 노선이 잘 연결돼 있어, 특히 야간에는 택시보다 저렴하고 안전하게 이동할 수 있습니다.</p>
+<p><strong>Q: 예약 없이 바로 들어갈 수 있는 곳이 있나요?</strong><br>A: 일부 펍과 캐주얼 바는 선착순 입장을 허용하지만, 인기 있는 라운지와 클럽은 사전 예약이 필수이니 미리 확인하세요.</p>
+<p><strong>Q: 여자 혼자 가도 괜찮은가요?</strong><br>A: 등촌은 비교적 안전한 편이며, 여성 전용 라운지도 일부 운영 중입니다. 하지만 늦은 밤에는 동행을 권장합니다.</p>
+</div>
+</section>
+
+<footer class="section">
+<p>© 2026 등촌 유흥 룩북. 모든 권리 보유.</p>
+</footer>
+</div>
 </body>
 </html>
